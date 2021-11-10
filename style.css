@@ -11,6 +11,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 h1{
     color: #426696;
@@ -30,8 +31,6 @@ h3,p{
 }
 .glass{
     background: white;
-    min-height: 80vh;
-    width: 60%;
     background: linear-gradient(to right bottom,
     rgba(255,255,255,0.7),
     rgba(255,255,255,0.3));
@@ -40,7 +39,7 @@ h3,p{
     backdrop-filter: blur(2rem);
     display: flex;
 }
-.circle1,.circle2{
+.circle1,.circle2,.circle3,.circle4{
     background: white;
     background: linear-gradient(to right bottom,
     rgba(255,255,255,0.8),
@@ -67,14 +66,25 @@ h3,p{
         transform:rotate(360deg); 
     } 
 }
-.circle1{
-    
+.circle1{ 
     top: 5%;
     right: 10%;
 }
 .circle2{
     bottom: 5%;
     left: 10%;
+}
+.circle3{
+    height: 5rem;
+    width: 5rem;
+    top: 2%;
+    left: 5%;
+}
+.circle4{
+    height: 3rem;
+    width: 3rem;
+    bottom: 5%;
+    right: 5%;
 }
 
 /* Dash board Section */
@@ -93,7 +103,7 @@ h3,p{
 }
 .user img{
     width: auto;
-    height: 10rem;
+    height: 7rem;
     border-radius: 1rem;
     
 }
@@ -115,23 +125,23 @@ h3,p{
 .pro{
     background: linear-gradient(to right top,#65dfc9,#6cdbeb);
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.3rem;
     color: white;
-    
+    margin: 1rem;
     display: flex;
     position: relative;
 }
 .pro img{
 
-    height: 8rem;
+    height: 7rem;
     position: absolute;
     top: -20%;
-    right: 5%;
+    right: 4%;
 }
 .pro h2{
     color: white;
     width: 40%;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* Games section */
@@ -169,7 +179,7 @@ input[type="text"], select {
 }
 .progress{
     width: 100%;
-    height: 25%;
+    height: 15%;
     background: linear-gradient(to right top,#65dfc9,#6cdbeb);
     border-radius: 1rem;
     position: relative;
